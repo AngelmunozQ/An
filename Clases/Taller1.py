@@ -45,6 +45,7 @@ else:
 Respuesta = str(input("Quiere volver a repetir el ciclo ?: "))
 while (Respuesta == "si"):
     Respuesta = str(input("Quiere volver a repetir el ciclo ?: "))
+    
     print("""
 1. Suma
 2. Multiplicacion
