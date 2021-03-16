@@ -25,8 +25,6 @@ def homocis (u):
         print("ERROR 00")
 
 
-
-
 print("""
 1. Trigliceridos
 2. Homocisteina
