@@ -55,9 +55,13 @@ if T>=1:
 else:
     print("ERROR 044")"""
 
+print("""
+1.Ingresar costos del usuario
+2.Agregar
+3.Elimina
+4.Descuento
+""")
 
-
-    
 
 
 
