@@ -56,7 +56,7 @@ while(E!=5):
                     print("Normal") 
                 print(lista3)
 
-            print("Ingrese 0 para retornar al segundo menu")
+            print("Ingrese 0 para retornar al menu principal 1.F , 2.K , 3.C , 4.SALIR DEL PROGRAMA, ")
 
         elif o=="B":
             print("Elemento mayor", max(lista3))
