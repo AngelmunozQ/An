@@ -67,6 +67,6 @@ while(E!=5):
 
     else:
         print("ERROR CX0045 ")
-        E= input("Ingrese una opcion valida: ")
+    E= input("Ingrese una opcion valida: ")
 
     
