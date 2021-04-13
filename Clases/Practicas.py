@@ -60,75 +60,10 @@ if total>1000:
     total-=total*0.1
 print("Monto total a pagar: $", total)"""
 
-#Permitir que el usuario ingrese C para mostrar la lista en pesos 
-#colombianos dólares notifique que no es necesaria una conversión, D en 
-#dólares (se sabe que un peso es 0,00027 dolares) y E para convertir en 
-#euros (se sabe que un peso es 0,00023 euros). En caso de que el usuario 
-#ingrese una letra diferente notifíquele que ingreso una entrada no válida y 
-#regrese al menú principal. 
-#Permita que el usuario agregue un nuevo valor a la lista, al final muéstrela
-
-listaPesos = [20000,30000,4000,2500,1000,7600]
-
-conversionpesosc=("No es necesario la lista ya esta en pesos colombianos")
-conversionesdolares= ("Esta seria la conversion de pesos colombianos a dolares")
-conversionesaeuros=("Esta seria la convercion de Euros a pesos colombianos")
-letradiferente=("lo sentimos a cometido un error")   
-
-print("""
-1.  Quieres ver la lista en Pesos colombianos.
-2.  Quieres ver la lista en Euros. 
-3.  Quieres ver la lista en Dolares.
-""")
-
-eleccion= (input("Selecciona una opcion por favor: "))
-
-while(eleccion!=4):
-
-    if eleccion=="1":
-        print(listaPesos)
-        print(conversionpesosc)
-
-        print("""
-        A.  Agregar a la lista
-        B.  Eliminar de la lista
-        C.  Ver maximo,minimo y promedio.
-        """)
-
-        eleccion1=(input("Selecciona una letra: "))
-
-        if eleccion1=="A":
-            x=1
-            while(x!=0):
-                x=float(input("Agregue el elemento: "))
-                listaPesos.append(x)
-                print(listaPesos)
-
-        elif eleccion1=="B":
-            i=int(input("elemento a eliminar: "))
-            listaPesos.pop(i)
-            print(listaPesos)
+#################################################################################################################
+#Funciones, hacer taller.
+##############################################################
+#crear clase de animal. #estudiar examen
 
 
-
-
-
-
-    elif eleccion=="2":
-        listaeuros=[]
-        for i in listaPesos:
-            conversor = round(i*0.00023,2)
-            listaeuros.append(conversor)
-            print(listaeuros)
-            print(conversionesaeuros)
-    elif eleccion=="3":
-        listadolares=[]
-        for i in listaPesos:
-            conver=round(i*0.00027,3)
-            listadolares.append(conver)
-            print(listadolares)
-            print(conversionesdolares)
-    else:
-        print("ERROR")
-    eleccion= (input("Selecciona una opcion por favor: "))
 
