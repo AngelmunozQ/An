@@ -41,7 +41,7 @@ triangulo(i,k)"""
     print(f"{lista1},{lista2},{lista3}");"""
 
 #4
-AB= [36,37,38,35,36,38]
+"""AB= [36,37,38,35,36,38]
 def encontrar ():
     print("Elemento mayor", max(AB))
     print("Elemento menor",min(AB))
@@ -49,6 +49,22 @@ def encontrar ():
     for i in AB:
         suma+=i
     promedio =suma/6
-    print(promedio)
+    print(promedio)"""
 
 #5
+def fib(n):
+    a=0
+    b=1
+    l1=[fib]
+    while a<n:
+        print(a,end="")
+        a=b
+        b=a+b
+    print()
+fib(100000000000000000)
+
+
+
+
+
+
