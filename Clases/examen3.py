@@ -55,14 +55,24 @@ def encontrar ():
 def fib(n):
     a=0
     b=1
-    l1=[fib]
-    while a<n:
-        print(a,end="")
+    lista5=[]
+    while a < n:
+        print(a, end="")
         a=b
         b=a+b
-    print()
-fib(100000000000000000)
+        lista5.append(b)
+    print(lista5)
+    ingreso=int(input("Ingrese el numero a encontrar: "))
+    suma=0
+    for i in lista5:
+        if ingreso == lista5:
+            print("el numero {} se encontro en la posicion {}".format(ingreso,i))
+        else:
+            print("el numero {} no esta en la posicion {}".format(ingreso,i))
+fib(1000)
 
+#6
+#es relativamente simple hacer eso solo es utilizar la palabra es "from file import sum(a,b)"
 
 
 
