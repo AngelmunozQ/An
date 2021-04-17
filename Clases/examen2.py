@@ -69,11 +69,4 @@ while(E!=5):
         print("ERROR CX0045 ")
     E= input("Ingrese una opcion valida: ")
 
-""""""Bonus"""""
-Temperatura_Corporal = [36,37,38,35,36,38,37.5,38.2,41,37.4,38.6,39.1,40.3,33]
-Contador=0
-for i in Temperatura_Corporal
-    contador+=1
-print("el numero de elementos es",contador)
-resultado = contador/24
-print("resultado")
+
