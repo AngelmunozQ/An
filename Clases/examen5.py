@@ -18,7 +18,7 @@ pregunta ="Ingrese su dulce favorito: "
 pregunta2 ="Ingrese el precio del Dulce: "
 listadulces,listaprecios = addele(pregunta,pregunta2)
 print(listadulces,listaprecios)
-plt.bar(listaSnaks, listaPrecios)
+plt.bar(listadulces, listaprecios)
 plt.show()
 #####
 P3="Ingrese su ciudad favorita: "
