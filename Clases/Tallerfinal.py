@@ -1,4 +1,4 @@
-#PUNTO #1#
+#PUNTO #1- 2 y 3
 def calcu (a,b,name):
     IMC=a/b**2
     if a and b < 0:
