@@ -47,3 +47,29 @@ while (eleccion >= 1 and eleccion <= 3 and pregunta=="si"):
 
     else:
         print(pregunta)
+
+########################################3
+def validarArchivo(nombreArchivo, descripcion):
+    try:
+        archivo = open(nombreArchivo)
+        return True
+    except FileNotFoundError:
+        archivo = open(nombreArchivo, 'w', encoding='UTF-8')
+        print("2")
+        archivo.writelines(descripcion)
+        return False
+
+def guardarLinea (nombreArchivo, lineaIn):
+    archivo = open(nombreArchivo,'a')
+    archivo.writelines(lineaIn)
+
+nameFile = "mantenimientos.txt"
+isValidate = validarArchivo(nameFile, 'Seguimiento de mantenimiento de equipos medicos')
+if (isValidate):
+    descEquipo = input('Ingrese la descripción del equipo : ')
+    nombre = validateString('Ingrese su nombre :')
+    precio = validateFloat('Ingrese el precio : ')
+    linea ='\nDescripcion'+ descEquipo+ ' nombre técnico: ' + nombre + ' precio acordado: '+ str(precio)
+    guardarLinea(nameFile, linea)
+    else:
+    print('se creó el archivo')
